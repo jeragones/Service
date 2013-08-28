@@ -1,0 +1,52 @@
+﻿/* TAB MENU   
+----------------------------------------------------------*/
+
+div.backMenu
+{
+    float:right;
+    background-color:#989898;
+    
+}
+
+div.option
+{
+    padding: 0px 8px 16px 8px;
+}
+
+div.option ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+}
+
+div.option ul li a, div.option ul li a:visited
+{
+    background-color: #6B7D8D;
+    border: 1px #4e667d solid;
+    color: #ffffff;
+    display: block;
+    line-height: 1.35em;
+    padding: 4px 30px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+div.option ul li a:hover
+{
+    background-color: #8997A4;
+    /*color: #465c71;*/
+    color: #dde4ec;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.option ul li a:active
+{
+    background-color: #465c71;
+    color: #cfdbe6;
+    text-decoration: none;
+}
+
+

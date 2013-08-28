@@ -1,10 +1,16 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Directory_Service.SiteMaster" %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="es">
 <head runat="server">
-    <title></title>
-    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <title> servicio </title>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <!--<meta charset="utf-8" />-->
+
+    <link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="Styles/menu.css" rel="stylesheet" type="text/css" />
+    
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
     </asp:ContentPlaceHolder>
 </head>
@@ -14,33 +20,28 @@
         <div class="header">
             <div class="title">
                 <h1>
-                    My ASP.NET Application
+                    Servicio de Directorio
                 </h1>
             </div>
-            <div class="loginDisplay">
-                <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
-                    <AnonymousTemplate>
-                        [ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]
-                    </AnonymousTemplate>
-                    <LoggedInTemplate>
-                        Welcome <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
-                        [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Log Out" LogoutPageUrl="~/"/> ]
-                    </LoggedInTemplate>
-                </asp:LoginView>
-            </div>
+            jo
+            <!--<nav id="jojo" class="num" runat="server">
+            </nav>-->
+        </div>
+        
+        <div class="main">
             <div class="clear hideSkiplink">
                 <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
                     <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Home"/>
-                        <asp:MenuItem NavigateUrl="~/About.aspx" Text="About"/>
+                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio"/>
+                        <asp:MenuItem NavigateUrl="~/GUI/pagGrupo.aspx" Text="Grupos"/>
+                        <asp:MenuItem NavigateUrl="~/GUI/pagUsuario.aspx" Text="Usuarios"/>
+                        <asp:MenuItem NavigateUrl="~/GUI/pagRol.aspx" Text="Roles"/>
                     </Items>
                 </asp:Menu>
             </div>
-        </div>
-        <div class="main">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
-        </div>
-        <div class="clear">
+            
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
         </div>
     </div>
     <div class="footer">
