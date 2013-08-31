@@ -18,7 +18,7 @@ namespace Directory_Service
         {
             if (!txtUsuario.Text.Equals("") & !txtPass.Text.Equals(""))
             {
-                Response.Write("<script type='text/javascript'>window.open('GUI/Form/frmInicio.aspx','_parent');</script>");
+                Response.Write("<script type='text/javascript'>window.open('GUI/frmInicio.aspx','_parent');</script>");
             }
         }
     }

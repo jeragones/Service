@@ -7,9 +7,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Directory_Service.GUI.Form {
+namespace Directory_Service {
     
     
-    public partial class frmUsuario {
+    public partial class frmConfiguracion {
     }
 }

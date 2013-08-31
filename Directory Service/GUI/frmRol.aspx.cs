@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Directory_Service.GUI
+namespace Directory_Service
 {
-    public partial class pagGrupo : System.Web.UI.MasterPage
+    public partial class frmRol : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
