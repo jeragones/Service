@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Directory_Service.GUI
 {
-    public partial class pagGrupo : System.Web.UI.Page
+    public partial class pagGrupo : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Directory_Service
+namespace Directory_Service.GUI.Form
 {
-    public partial class _Default : System.Web.UI.Page
+    public partial class frmLogin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -16,9 +16,9 @@ namespace Directory_Service
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            if (!txtUsuario.Text.Equals("") & !txtPass.Text.Equals(""))
+            if (!txtUsuario.Text.Equals("") & !txtPass.Text.Equals("")) 
             {
-                Response.Write("<script type='text/javascript'>window.open('GUI/Form/frmInicio.aspx','_parent');</script>");
+                Response.Write("<script type='text/javascript'>window.open('frmGrupo.aspx','_blank');</script>");
             }
         }
     }

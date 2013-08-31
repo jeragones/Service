@@ -1,10 +1,12 @@
-﻿<%@ Page Title="Home Page" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true"
-    CodeBehind="Default.aspx.cs" Inherits="Directory_Service._Default" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="frmLogin.aspx.cs" MasterPageFile="~/Site.master" Inherits="Directory_Service.GUI.Form.frmLogin" %>
 
-<asp:Content ID="headerContent" runat="server" ContentPlaceHolderID="HeadContent">
-</asp:Content>
-<asp:Content ID="mainContent" runat="server" ContentPlaceHolderID="MainContent">
-    <form runat="server">
+<html>
+<head runat="server">
+    <title></title>
+</head>
+<body>
+<asp:Content ID="Content" ContentPlaceHolderID="MenuContent" runat="server">
+    <form id="form1" runat="server">
         <table>
             <tr>
                 <td><asp:Label ID="Label1" cssClass="lblLogin" runat="server" Text="Usuario:"></asp:Label></td>
@@ -21,3 +23,5 @@
         </table>
     </form>
 </asp:Content>
+</body>
+</html>

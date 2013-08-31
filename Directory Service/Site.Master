@@ -12,10 +12,11 @@
     <link href="Styles/menu.css" rel="stylesheet" type="text/css" />
     
     <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    head
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form runat="server">
+    
     <div class="page">
         <div class="header">
             <div class="title">
@@ -23,30 +24,23 @@
                     Servicio de Directorio
                 </h1>
             </div>
-            jo
-            <!--<nav id="jojo" class="num" runat="server">
-            </nav>-->
         </div>
         
         <div class="main">
-            <div class="clear hideSkiplink">
-                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
-                    <Items>
-                        <asp:MenuItem NavigateUrl="~/Default.aspx" Text="Inicio"/>
-                        <asp:MenuItem NavigateUrl="~/GUI/pagGrupo.aspx" Text="Grupos"/>
-                        <asp:MenuItem NavigateUrl="~/GUI/pagUsuario.aspx" Text="Usuarios"/>
-                        <asp:MenuItem NavigateUrl="~/GUI/pagRol.aspx" Text="Roles"/>
-                    </Items>
-                </asp:Menu>
+            <asp:ContentPlaceHolder ID="MenuContent" runat="server">
+                
+            </asp:ContentPlaceHolder>
+            
+            <div class="content" runat="server" Orientation="Horizontal">
+                <asp:ContentPlaceHolder ID="MainContent" runat="server">
+                main
+                </asp:ContentPlaceHolder>
             </div>
             
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
         </div>
     </div>
     <div class="footer">
         
     </div>
-    </form>
 </body>
 </html>
