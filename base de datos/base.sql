@@ -22,7 +22,7 @@ CREATE TABLE Grupo(
 end
 go
 
-
+ 
 IF object_id('Rol', 'U') IS NULL
 BEGIN  
 CREATE TABLE Rol(
