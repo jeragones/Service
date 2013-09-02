@@ -70,7 +70,9 @@ namespace Directory_Service
             //CreateUserAccount("LDAP://host:172.16.0.1", "mijo", "Menoriti.5698");
             //CreateUserAccount("LDAP://CN=user, OU=USERS, DC=operativos, DC=service", "mijoto", "Jera.5698");
             //CreateUserAccount("LDAP://DC=operativos, DC=service", "mijoto", "Jera.5698");
-
+            
+            //CreateUserAccount("LDAP://CN=Users, DC=operativos.service", @"operativos.service\jeragones", "Jera.123");
+            
             CreateUserAccount("LDAP://172.16.0.1/CN=Users;DC=operativos.service", @"operativos.service\jeragones", "Jera.123");
             
             //"LDAP://192.168.1.1/CN=Users;DC=Yourdomain";
