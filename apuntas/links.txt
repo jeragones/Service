@@ -1,5 +1,0 @@
-http://www.codeproject.com/Articles/14353/Creating-a-Basic-Windows-Service-in-C
-http://dotnet.dzone.com/articles/creating-windows-services-c
-http://www.cjorellana.net/2009/07/como-hacer-un-servicio-windows-en-c.html
-http://www.codeproject.com/Articles/32026/Capturing-Device-Events-in-a-C-Windows-Service
-http://www.codecandle.com/articles/csharp/flow-control/jump-statements-goto-statement.html

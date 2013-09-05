@@ -1,4 +1,4 @@
-﻿namespace WS
+﻿namespace SW
 {
     partial class ProjectInstaller
     {

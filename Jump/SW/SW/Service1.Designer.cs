@@ -1,4 +1,4 @@
-﻿namespace WS
+﻿namespace SW
 {
     partial class SW
     {
@@ -28,22 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.eventLog1 = new System.Diagnostics.EventLog();
-            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).BeginInit();
-            // 
-            // eventLog1
-            // 
-            this.eventLog1.Log = "Application";
             // 
             // SW
             // 
             this.ServiceName = "SW";
-            ((System.ComponentModel.ISupportInitialize)(this.eventLog1)).EndInit();
 
         }
 
         #endregion
 
-        private System.Diagnostics.EventLog eventLog1;
+
     }
 }
